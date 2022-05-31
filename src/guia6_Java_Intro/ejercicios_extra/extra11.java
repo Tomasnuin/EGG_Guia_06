@@ -18,5 +18,14 @@ public class extra11 {
 
     public static void catidadDigitos() {
         Scanner leer = new Scanner(System.in);
+        
+        System.out.println("Ingresar un número:");
+        int num = leer.nextInt(), digitos = 0;
+        
+        do {
+            digitos++;
+            num /= 10;
+        } while (num != 0);
+        System.out.println("Digitos: " + digitos);
     }
 }
